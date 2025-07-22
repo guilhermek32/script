@@ -15,8 +15,8 @@ $pythonInstaller = "$tempPath\python.exe"
 Invoke-WebRequest -Uri $pythonUrl -OutFile $pythonInstaller
 
 # Baixar MinGW
-$mingwUrl = "https://sourceforge.net/projects/mingw-w64/files/latest/download"
-$mingwInstaller = "$tempPath\mingw.exe"
+$mingwUrl = "https://sourceforge.net/projects/mingw/files/latest/download"
+$mingwInstaller = "$tempPath\mingw-get-setup.exe"
 Invoke-WebRequest -Uri $mingwUrl -OutFile $mingwInstaller
 
 Write-Output "`nInstalando VSCode..."
